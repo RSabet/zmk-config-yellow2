@@ -26,12 +26,6 @@ As such, those are in use within the default layer at this time.*/
 
               default_layer {
                      display-name = "Default Layer";
- // ---------------------------------------------------------------------------------------------------------------------------------
- // | GRAVE  |   1    |   2    |   3    |   4    |   5    |                                      |   6    |   7    |   8    |   9    |   0    |  DEL   |
- // |  TAB   |   Q    |   W    |   E    |   R    |   T    |                                      |   Y    |   U    |   I    |   O    |   P    |  BSPC  |
- // |  CTRL  |   A    |   S    |   D    |   F    |   G    |                                      |   H    |   J    |   K    |   L    |   ;    |   '    |
- // |  SHIFT |   Z    |   X    |   C    |   V    |   B    |  LBKT  |                    |  RBKT  |   N    |   M    |   ,    |   .    |   /    |  RET   |
- // | ADJUST |  ESC   |  ALT   |  LGUI  | EISUU  | LOWER  | SPACE  |                    |  SPACE | RAISE  |  KANA  |  LEFT  |  DOWN  |  UP    |  RIGHT |
                      bindings = <
        &kp N1  &kp N2  &kp N3   &kp N4   &kp N5    &kp N6                            &kp N7    &kp N8    &kp N9    &kp N0     &kp A  &kp B
        &kp C   &kp D   &kp E    &kp F    &kp G     &kp H                             &kp I     &kp J     &kp K     &kp L      &kp M  &kp N
@@ -55,6 +49,8 @@ As such, those are in use within the default layer at this time.*/
        &mo ADJUST &kp ESC &kp LALT &kp LGUI &kp LANG2 &mo LOWER &kp SPACE        &kp SPACE &mo RAISE &kp LANG1 &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT
                      >;
               };*/
+
+              /*
               lower_layer {
                      display-name = "Lower Layer";
  // ---------------------------------------------------------------------------------------------------------------------------------
@@ -103,5 +99,6 @@ As such, those are in use within the default layer at this time.*/
        &trans     &trans       &trans       &trans       &trans       &trans       &trans          &trans   &trans          &trans          &trans          &trans          &trans          &trans
                      >;
               };
+              */
        };
 };
