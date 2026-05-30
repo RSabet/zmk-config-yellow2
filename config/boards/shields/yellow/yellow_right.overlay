@@ -6,8 +6,9 @@
 
 #include "yellow.dtsi"
 
+// Offset of 6 because the left side has 6 columns
 &default_transform {
-    col-offset = <7>;
+    col-offset = <6>;
 };
 
 // cols:  100, 024, 022, 020, 017
@@ -19,6 +20,6 @@
         , <&pro_micro  4 GPIO_ACTIVE_HIGH>
         , <&pro_micro  3 GPIO_ACTIVE_HIGH>
         , <&pro_micro  2 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 21 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 22 GPIO_ACTIVE_HIGH>
         ;
 };
