@@ -103,20 +103,30 @@
       neo_symbols_l {
         display-name = "NEO2-Symbols L";
         bindings = <
-          &trans &trans &trans &trans &trans &trans  /* */   &trans &trans &trans &trans &trans &trans
-          &trans &trans &trans &trans &trans &trans  /* */   &trans &trans &trans &trans &trans &trans
-          &trans &trans &trans &trans &trans &trans  /* */   &trans &trans &trans &trans &trans &trans
-                                      &trans &trans  /* */   &trans &trans
+      /*┌───────────┬────────────┬────────────┬────────────┬────────────┬────────────┐ ┌────────────┬────────────┬────────────┬────────────┬────────────┬────────────┐ */
+          &trans     &kp DE_EURO  &kp DE_UNDER &kp DE_LBKT  &kp DE_RBKT  &kp DE_CARET   &kp DE_EXCL  &kp DE_LT    &kp DE_GT    &kp DE_EQUAL &kp DE_AMPS  &trans
+      /*├───────────┼────────────┼────────────┼────────────┼────────────┼────────────┤ ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤ */
+          &kp DE_AT  &kp DE_BSLH  &kp DE_SLASH &kp DE_LBRC  &kp DE_RBRC  &kp DE_STAR    &kp DE_QMARK &kp DE_LPAR  &kp DE_LPAR  &kp DE_MINUS &kp DE_COLON &trans
+      /*├───────────┼────────────┼────────────┼────────────┼────────────┼────────────┤ ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤ */
+          &trans     &kp DE_HASH  &kp DE_DLLR  &kp DE_PIPE  &kp DE_TILDE &kp DE_GRAVE   &kp DE_PLUS  &kp DE_PRCNT &kp DE_DQT   &kp DE_SQT   &kp DE_SEMI  &trans
+      /*└───────────┴────────────┴────────────┴────────────┼────────────┼────────────┤ ├────────────┼────────────┼────────────┴────────────┴────────────┴────────────┘ */
+                                                            &trans       &trans         &trans       &trans
+      /*                                                   └────────────┴────────────┘ └────────────┴────────────┘                                                     */
         >;
       };
 
       neo_symbols_r {
         display-name = "NEO2-Symbols R";
         bindings = <
-          &trans &kp DE_EURO &kp DE_UNDER &kp DE_LBKT &kp DE_RBKT  &kp DE_CARET /* */   &kp DE_EXCL  &kp DE_LT    &kp DE_GT   &kp DE_EQUAL &trans &trans
-          &trans &kp DE_BSLH &kp DE_SLASH &kp DE_LBRC &kp DE_RBRC  &kp DE_STAR  /* */   &kp DE_QMARK &kp DE_LPAR  &kp DE_LPAR &kp DE_MINUS &kp DE_COLON  &kp DE_AT
-          &trans &kp DE_HASH &kp DE_DLLR  &kp DE_PIPE &kp DE_TILDE &kp DE_GRAVE /* */   &kp DE_PLUS  &kp DE_PRCNT &trans      &trans       &trans &trans
-                                                      &trans       &trans       /* */   &trans       &trans
+      /*┌───────────┬────────────┬────────────┬────────────┬────────────┬────────────┐ ┌────────────┬────────────┬────────────┬────────────┬────────────┬────────────┐ */
+          &trans     &kp DE_EURO  &kp DE_UNDER &kp DE_LBKT  &kp DE_RBKT  &kp DE_CARET   &kp DE_EXCL  &kp DE_LT    &kp DE_GT    &kp DE_EQUAL &kp DE_AMPS  &trans
+      /*├───────────┼────────────┼────────────┼────────────┼────────────┼────────────┤ ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤ */
+          &trans     &kp DE_BSLH  &kp DE_SLASH &kp DE_LBRC  &kp DE_RBRC  &kp DE_STAR    &kp DE_QMARK &kp DE_LPAR  &kp DE_LPAR  &kp DE_MINUS &kp DE_COLON &kp DE_AT
+      /*├───────────┼────────────┼────────────┼────────────┼────────────┼────────────┤ ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤ */
+          &trans     &kp DE_HASH  &kp DE_DLLR  &kp DE_PIPE  &kp DE_TILDE &kp DE_GRAVE   &kp DE_PLUS  &kp DE_PRCNT &kp DE_DQT   &kp DE_SQT   &kp DE_SEMI  &trans
+      /*└───────────┴────────────┴────────────┴────────────┼────────────┼────────────┤ ├────────────┼────────────┼────────────┴────────────┴────────────┴────────────┘ */
+                                                            &trans       &trans         &trans       &trans
+      /*                                                   └────────────┴────────────┘ └────────────┴────────────┘                                                     */
         >;
       };
 
