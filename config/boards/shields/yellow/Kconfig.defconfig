@@ -4,7 +4,7 @@
 if SHIELD_YELLOW_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Yellow"
+    default "Yellow kbd"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
