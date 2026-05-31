@@ -27,13 +27,6 @@
  #define DE_UE (DE_U_UMLAUT)
 
 
-&lt {  // other layer on hold
-  quick-tap-ms = <200>;
-}
-&mt {  // other keypress on hold
-  quick-tap-ms = <200>;
-}
-
 / {
     combos {
       compatible = "zmk,combos";
@@ -63,6 +56,66 @@
           &lt SYMBOLS_L ESC  &mt LGUI U &mt LALT I &mt LCTRL A &mt LSHFT E &kp O         /* */    &kp S &kp N  &kp R     &kp T    &kp D     &lt SYMBOLS_R DE_Y
           &kp LSHFT          &kp DE_UE  &kp DE_OE  &kp DE_AE   &kp P       &kp DE_Z      /* */    &kp B &kp M  &kp COMMA &kp DOT  &kp J     &kp DE_SZ
                                                       &kp SPACE   &kp BSPC      /* */    &kp SPACE  &kp LEFT
+        >;
+      };
+
+      neo_lower {
+        display-name = "NEO2-Lower";
+        bindings = <
+          &trans &trans &trans &trans &trans &trans  /* */   &trans &trans &trans &trans &trans &trans
+          &trans &trans &trans &trans &trans &trans  /* */   &trans &trans &trans &trans &trans &trans
+          &trans &trans &trans &trans &trans &trans  /* */   &trans &trans &trans &trans &trans &trans
+                                      &trans &trans  /* */   &trans &trans
+        >;
+      };
+
+      neo_raise {
+        display-name = "NEO2-Raise";
+        bindings = <
+          &trans &trans &trans &trans &trans &trans  /* */   &trans &trans &trans &trans &trans &trans
+          &trans &trans &trans &trans &trans &trans  /* */   &trans &trans &trans &trans &trans &trans
+          &trans &trans &trans &trans &trans &trans  /* */   &trans &trans &trans &trans &trans &trans
+                                      &trans &trans  /* */   &trans &trans
+        >;
+      };
+
+      neo_adjust {
+        display-name = "NEO2-Adjust";
+        bindings = <
+          &trans &trans &trans &trans &trans &trans  /* */   &trans &trans &trans &trans &trans &trans
+          &trans &trans &trans &trans &trans &trans  /* */   &trans &trans &trans &trans &trans &trans
+          &trans &trans &trans &trans &trans &trans  /* */   &trans &trans &trans &trans &trans &trans
+                                      &trans &trans  /* */   &trans &trans
+        >;
+      };
+
+      neo_f_keys {
+        display-name = "NEO2-F Keys";
+        bindings = <
+          &trans &trans &trans &trans &trans &trans  /* */   &trans &trans &trans &trans &trans &trans
+          &trans &trans &trans &trans &trans &trans  /* */   &trans &trans &trans &trans &trans &trans
+          &trans &trans &trans &trans &trans &trans  /* */   &trans &trans &trans &trans &trans &trans
+                                      &trans &trans  /* */   &trans &trans
+        >;
+      };
+
+      neo_symbols_l {
+        display-name = "NEO2-Symbols L";
+        bindings = <
+          &trans &trans &trans &trans &trans &trans  /* */   &trans &trans &trans &trans &trans &trans
+          &trans &trans &trans &trans &trans &trans  /* */   &trans &trans &trans &trans &trans &trans
+          &trans &trans &trans &trans &trans &trans  /* */   &trans &trans &trans &trans &trans &trans
+                                      &trans &trans  /* */   &trans &trans
+        >;
+      };
+
+      neo_symbols_r {
+        display-name = "NEO2-Symbols R";
+        bindings = <
+          &trans &trans &trans &trans &trans &trans  /* */   &trans &trans &trans &trans &trans &trans
+          &trans &trans &trans &trans &trans &trans  /* */   &trans &trans &trans &trans &trans &trans
+          &trans &trans &trans &trans &trans &trans  /* */   &trans &trans &trans &trans &trans &trans
+                                      &trans &trans  /* */   &trans &trans
         >;
       };
 #endif // TEST_LAYER
