@@ -1,3 +1,4 @@
 
 .zmk/
 .session.vim
+*.uf2
