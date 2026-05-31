@@ -27,6 +27,9 @@
  #define DE_OE (DE_O_UMLAUT)
  #define DE_UE (DE_U_UMLAUT)
 
+ #define _LOW_RET &lt LOWER RET
+ #define _RAI_RET &lt RAISE RET
+ #define _NAV_SPC &lt NAVNUM SPACE
 
 / {
     combos {
@@ -46,7 +49,7 @@
           &kp N1  &kp N2  &kp N3   &kp N4   &kp N5    &kp N6                            &kp N7    &kp N8    &kp N9    &kp N0     &kp A  &kp B
           &kp C   &kp D   &kp E    &kp F    &kp G     &kp H                             &kp I     &kp J     &kp K     &kp L      &kp M  &kp N
           &kp O   &kp P   &kp Q    &kp R    &kp S     &kp T                             &kp U     &kp V     &kp W     &kp X      &kp Y  &kp Z
-          &kp A     &kp B                             &kp C     &kp D
+                                            &kp A     &kp B                             &kp C     &kp D
         >;
       };
 #else
@@ -60,7 +63,7 @@
       /*├──────────────────┼───────────┼───────────┼───────────┼───────────┼───────────┤ ├───────────┼───────────┼───────────┼───────────┼───────────┼──────────────────┤ */
           &kp LSHFT         &kp DE_UE   &kp DE_OE   &kp DE_AE   &kp P       &kp DE_Z      &kp B       &kp M       &kp COMMA   &kp DOT     &kp J       &kp DE_SZ
       /*└──────────────────┴───────────┴───────────┴───────────┼───────────┼───────────┤ ├───────────┼───────────┼───────────┴───────────┴───────────┴──────────────────┘ */
-                                                                &lt LOWER RET &lt NAVNUM SPACE &lt RAISE RET &lt NAVNUM SPACE
+                                                                _LOW_RET    _NAV_SPC      _RAI_RET    _NAV_SPC
       /*                                                       └───────────┴───────────┘ └───────────┴───────────┘                                                     */
         >;
       };
