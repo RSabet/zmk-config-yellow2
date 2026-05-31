@@ -14,18 +14,25 @@
  #define TEST_LAYER
  #undef TEST_LAYER
 
- #define DEFAULT 0
- #define LOWER  1
- #define RAISE  2
- #define ADJUST 3
+ #define DEFAULT   0
+ #define LOWER     1
+ #define RAISE     2
+ #define ADJUST    3
+ #define F_KEYS    4
+ #define SYMBOLS_L 5
+ #define SYMBOLS_R 6
 
  #define DE_AE (DE_A_UMLAUT)
  #define DE_OE (DE_O_UMLAUT)
  #define DE_UE (DE_U_UMLAUT)
 
-/* NOTE: At the time of the creation of this keymap, there are no specified codes for 'eisuu' and 'kana' input in ZMK.
-However, 'LANG1' and 'LANG2' are fully-functioning candidates for 'kana' and 'eisuu' input respectively.
-As such, those are in use within the default layer at this time.*/
+
+&lt {  // other layer on hold
+  quick-tap-ms = <200>;
+}
+&mt {  // other keypress on hold
+  quick-tap-ms = <200>;
+}
 
 / {
     combos {
@@ -52,10 +59,10 @@ As such, those are in use within the default layer at this time.*/
       neo_layer {
         display-name = "NEO2";
         bindings = <
-          &kp TAB   &kp X      &kp V      &kp L       &kp C       &kp W      /* */    &kp K &kp H  &kp G     &kp F    &kp Q     &kp BSPC
-          &kp CLCK  &mt LGUI U &mt LALT I &mt LCTRL A &mt LSHFT E &kp O      /* */    &kp S &kp N  &kp R     &kp T    &kp D     &kp SQT
-          &kp LSHFT &kp DE_UE  &kp DE_OE  &kp DE_AE   &kp P       &kp Z      /* */    &kp B &kp M  &kp COMMA &kp DOT  &kp J     &kp DE_SZ
-                                                     &kp SPACE   &kp BSPC    /* */    &kp SPACE  &kp LEFT
+          &lt F_KEYS TAB     &kp X      &kp V      &kp L       &kp C       &kp W         /* */    &kp K &kp H  &kp G     &kp F    &kp Q     &kp BSPC
+          &lt SYMBOLS_L ESC  &mt LGUI U &mt LALT I &mt LCTRL A &mt LSHFT E &kp O         /* */    &kp S &kp N  &kp R     &kp T    &kp D     &lt SYMBOLS_R DE_Y
+          &kp LSHFT          &kp DE_UE  &kp DE_OE  &kp DE_AE   &kp P       &kp DE_Z      /* */    &kp B &kp M  &kp COMMA &kp DOT  &kp J     &kp DE_SZ
+                                                      &kp SPACE   &kp BSPC      /* */    &kp SPACE  &kp LEFT
         >;
       };
 #endif // TEST_LAYER
