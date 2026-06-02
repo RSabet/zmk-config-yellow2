@@ -93,7 +93,7 @@
       };
 
       neo_raise {
-        display-name = "NEO2-Raise";
+ &soft_off       display-name = "NEO2-Raise";
         bindings = <
           &trans &trans &trans &trans &trans &trans  /* */   &kp HOME    &kp PG_DN &kp PG_UP &kp END   &trans &kp C_VOL_UP
           &trans &trans &trans &trans &trans &trans  /* */   &kp LEFT    &kp DOWN  &kp UP    &kp RIGHT &trans &kp C_VOL_DN
@@ -128,7 +128,7 @@
       /*┌───────────┬────────────┬────────────┬────────────┬────────────┬────────────┐ ┌────────────┬────────────┬────────────┬────────────┬────────────┬────────────┐ */
           &trans     &kp DE_EURO  &kp DE_UNDER &kp DE_LBKT  &kp DE_RBKT  &kp DE_CARET   &kp DE_EXCL  &kp DE_LT    &kp DE_GT    &kp DE_EQUAL &kp DE_AMPS  &trans
       /*├───────────┼────────────┼────────────┼────────────┼────────────┼────────────┤ ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤ */
-          &kp DE_AT  &kp DE_BSLH  &kp DE_SLASH &kp DE_LBRC  &kp DE_RBRC  &kp DE_STAR    &kp DE_QMARK &kp DE_LPAR  &kp DE_LPAR  &kp DE_MINUS &kp DE_COLON &trans
+          &kp DE_AT  &kp DE_BSLH  &kp DE_SLASH &kp DE_LBRC  &kp DE_RBRC  &kp DE_STAR    &kp DE_QMARK &kp DE_LPAR  &kp DE_RPAR  &kp DE_MINUS &kp DE_COLON &trans
       /*├───────────┼────────────┼────────────┼────────────┼────────────┼────────────┤ ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤ */
           &trans     &kp DE_HASH  &kp DE_DLLR  &kp DE_PIPE  &kp DE_TILDE &kp DE_GRAVE   &kp DE_PLUS  &kp DE_PRCNT &kp DE_DQT   &kp DE_SQT   &kp DE_SEMI  &trans
       /*└───────────┴────────────┴────────────┴────────────┼────────────┼────────────┤ ├────────────┼────────────┼────────────┴────────────┴────────────┴────────────┘ */
