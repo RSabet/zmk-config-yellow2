@@ -4,39 +4,39 @@
  * SPDX-License-Identifier: MIT
  */
 
- #include <behaviors.dtsi>
- #include <dt-bindings/zmk/keys.h>
- #include <locale/keys_de.h>
- #include <dt-bindings/zmk/bt.h>
- #include <dt-bindings/zmk/ext_power.h>
- #include <dt-bindings/zmk/outputs.h>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <locale/keys_de.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/outputs.h>
 
- #define TEST_LAYER
- #undef TEST_LAYER
+#define TEST_LAYER
+#undef TEST_LAYER
 
 #define HM_TAPPING_TERM 300
 #define HM_TAPPING_TERM_FAST 200
 #define HM_PRIOR_IDLE 150
 
- #define DEFAULT   0
- #define LOWER     1
- #define RAISE     2
- #define ADJUST    3
- #define F_KEYS    4
- #define SYMBOLS_L 5
- #define SYMBOLS_R 6
- #define NAVNUM    7
+#define DEFAULT   0
+#define LOWER     1
+#define RAISE     2
+#define ADJUST    3
+#define F_KEYS    4
+#define SYMBOLS_L 5
+#define SYMBOLS_R 6
+#define NAVNUM    7
 
- #define DE_AE (DE_A_UMLAUT)
- #define DE_OE (DE_O_UMLAUT)
- #define DE_UE (DE_U_UMLAUT)
+#define DE_AE (DE_A_UMLAUT)
+#define DE_OE (DE_O_UMLAUT)
+#define DE_UE (DE_U_UMLAUT)
 
- #define _LOW_RET &lt LOWER RET
- #define _RAI_RET &lt RAISE RET
- #define _NAV_SPC &lt NAVNUM SPACE
- #define PO_OFF &ext_power EP_OFF
- #define SO_OFF &soft_off
- #define RESET &sys_reset
+#define _LOW_RET &lt LOWER RET
+#define _RAI_RET &lt RAISE RET
+#define _NAV_SPC &lt NAVNUM SPACE
+#define PO_OFF &ext_power EP_OFF
+#define SO_OFF &soft_off
+#define RESET &sys_reset
 
 // home row mods with timeless behaviour
 #define HMRLU &hm_l LGUI U
@@ -48,10 +48,6 @@
 #define HMRRR &hm_l LCTRL R
 #define HMRRT &hm_l LALT T
 #define HMRRD &hm_l LGUI D
-
-   &caps_lock_indicator {
-     on-while-idle;
-   };
 
 
 / {

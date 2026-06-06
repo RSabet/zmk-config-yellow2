@@ -41,6 +41,30 @@
     };
 };
 
+/ {
+    leds {
+        compatible = "gpio-leds";
+        caps_lock_led: caps_lock_led {
+            gpios = <&gpio0 15 GPIO_ACTIVE_HIGH>;
+        };
+    };
+};
+
+#include <dt-bindings/zmk/hid_indicators.h>
+
+/ {
+    indicators {
+        compatible = "zmk,indicator-leds";
+        caps_lock_indicator: caps_lock {
+            indicator = <HID_INDICATOR_CAPS_LOCK>;
+            leds = <&caps_lock_led>;
+        };
+    };
+};
+
+&caps_lock_indicator {
+    on-while-idle;
+};
 
 /*
 / {
