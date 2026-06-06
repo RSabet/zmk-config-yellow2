@@ -49,6 +49,10 @@
 #define HMRRT &hm_l LALT T
 #define HMRRD &hm_l LGUI D
 
+   &caps_lock_indicator {
+     on-while-idle;
+   };
+
 
 / {
 
