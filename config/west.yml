@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/joelspadin
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
+    - name: bluedrink9
+      url-base: https://github.com/bluedrink9
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -18,5 +20,7 @@ manifest:
     - name: zmk-oled-adapter
       remote: mctechnology17
       revision: main
-  self:
+    - name: zmk-poor-mans-led-indicator
+      remote: bluedrink9
+      revision: main  self:
     path: config
