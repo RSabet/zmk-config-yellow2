@@ -46,7 +46,7 @@
     leds {
         compatible = "gpio-leds";
         user_led: led_0 {
-            gpios = <&gpio0 15 GPIO_ACTIVE_HIGH>; /* Example for nice!nano */
+            gpios = <&gpio0 15 GPIO_ACTIVE_HIGH>; // Example for nice!nano 
             label = "User LED";
         };
     };
