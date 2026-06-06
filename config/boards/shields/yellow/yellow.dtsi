@@ -40,7 +40,7 @@
             ;
     };
 };
-
+/*
 / {
     leds {
         compatible = "gpio-leds";
@@ -65,6 +65,7 @@
 &caps_lock_indicator {
     on-while-idle;
 };
+*/
 
 /*
 / {
