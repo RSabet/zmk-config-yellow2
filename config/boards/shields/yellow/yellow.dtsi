@@ -41,6 +41,7 @@
     };
 };
 
+/*
 / {
     leds {
         compatible = "gpio-leds";
@@ -53,6 +54,7 @@
         indicator-led = &user_led;
     };
 };
+*/
 
 /*
 
